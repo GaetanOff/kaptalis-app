@@ -40,6 +40,12 @@
                     <sourceEncoding>utf-8</sourceEncoding>
                     <minimumTokens>100</minimumTokens>
                     <targetJdk>17</targetJdk>
+                    <!-- Analyse des fichiers .java sources uniquement (pas de bytecode). -->
+                    <includeTests>true</includeTests>
+                    <rulesets>
+                        <ruleset>/rulesets/java/quickstart.xml</ruleset>
+                        <ruleset>/category/java/bestpractices.xml</ruleset>
+                    </rulesets>
                 </configuration>
             </plugin>
         </plugins>
